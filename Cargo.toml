@@ -3,6 +3,9 @@ name = "wudao"
 version = "0.1.0"
 authors = ["sgk"]
 edition = "2018"
+description = "a console dictionary"
+license-file = "LICENSE"
+
 
 [[bin]]
 name = "wd"
