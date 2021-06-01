@@ -1,8 +1,12 @@
 [package]
-name = "wd"
+name = "wudao"
 version = "0.1.0"
 authors = ["sgk"]
 edition = "2018"
+
+[[bin]]
+name = "wd"
+path = "src/main.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
