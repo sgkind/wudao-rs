@@ -9,7 +9,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .author("sunguanke <sunguanke11@mails.ucas.edu.cn>")
         .about("wudao dict")
         .arg(Arg::new("word")
-            .about("the word to translate")
+            .help("the word to translate")
             .required(true)
             .index(1))
         .get_matches();
