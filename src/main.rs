@@ -1,10 +1,10 @@
 mod youdao;
 
-use clap::{Arg,App};
+use clap::{Arg,Command};
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let matches = App::new("wd")
+    let matches = Command::new("wd")
         .version("0.1.0")
         .author("sunguanke <sunguanke11@mails.ucas.edu.cn>")
         .about("wudao dict")
