@@ -13,7 +13,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             .required(true)
             .index(1))
         .get_matches();
-    if let Some(word) = matches.value_of("word") {
+    if let Some(word) = matches.get_one::<String>("word") {
         youdao::youdao_dict(word).await?;
     }
     Ok(())
